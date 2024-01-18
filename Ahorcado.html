@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.</title>
+    <style>
+        body{
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Juego del Ahorcado</h1>
+    <div id="letras"></div>
+    <div id="tablero"></div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const palabras = ["JAVASCRIPT", "PROGRAMACION", "HTML"];
+            let palabra = "";
+            function generarBotonesLetras() {
+                const letrasContainer = document.getElementById("letras");
+                for (let i = 65; i <= 90; i++) {
+                    const letra = String.fromCharCode(i);
+                    const boton = document.createElement("button");
+                    boton.textContent = letra;
+                    boton.addEventListener("click", function() {
+                        adivinarLetra(letra);
+                    });
+                    letrasContainer.appendChild(boton);
+                }
+            }
+
+            function mostrarTablero() {
+                const tablero = palabra.split("").map(letra => letrasCorrectas.has(letra) ? letra : "_").join(" ");
+                document.getElementById("tablero").textContent = tablero;
+            }
+            generarBotonesLetras();
+            mostrarTablero();
+            
+        });
+    </script>
+</body>
+</html>

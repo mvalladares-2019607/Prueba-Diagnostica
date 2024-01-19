@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateo | Portafolio</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0EDCF;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            z-index: 1000;
+        }
+        section {
+            margin: 80px 20px 20px 20px;
+            padding: 20px;
+            background-color:#F0EDCF;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px black;
+            text-align: justify;
+        }
+        h2 {
+            color: #333;
+        }
+        .circular-image {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+        }
+        .circular-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 3px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+      
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="circular-image">
+            <img src="Foto.png" alt="Tu Imagen">
+        </div>
+        <h1>Mateo Valladares</h1>
+        <p>Programador</p>  
+    </header>
+    <section>
+        <h2>Sobre Mí</h2>
+        <p>Hola a todos, mi nombre es Mateo Valladares, y soy estudiante actual del <b>Centro Educativo Técnico Laboral Kinal</b>, y me estoy especializando específicamente en el área de informática, es algo que me apasiona totalmente. Me gusta estar aprendiendo nuevos conceptos día tras día y no solo quedarme con lo que se aprende en clase. Soy responsable al momento de trabajar ya sea de forma individual o grupal, siempre dispuesto a ayudar a los demás.</p>
+    </section>
+    <section>
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li> 
+        </ul>
+    </section>
+    <section>
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p class="project-description">En este proyecto se presentó una página web, trabajada con HTML y CSS.</p>
+            <a href="https://cetkinal-my.sharepoint.com/:f:/g/personal/mvalladares-2019607_kinal_edu_gt/ElQnY9T04_RBgzCps2gzKG8BqXbmzCYh-ue9OO_kRUE53g?e=6vQFjI">Ver proyecto</a>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p class="project-description">En este proyecto se trabajó un pequeño programa de ventas.</p>
+            <a href="https://cetkinal-my.sharepoint.com/:f:/g/personal/mvalladares-2019607_kinal_edu_gt/EiXJ7kpgx0BGjKFyPENTwVIBsBlcn1bBZSjqL4HQf0Imhw?e=838hVY">Ver proyecto</a>
+        </div>
+    </section>
+    <section>
+        <h2>Multimedia</h2>
+        <iframe width="515" height="350" src="https://www.youtube.com/embed/ptc4Awb0UpU?si=y__B9s0rxCQvJiCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="515" height="350" src="https://www.youtube.com/embed/W8NDDREBBqE?si=WgaRVd3X07jvw8Wh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    <section>
+        <h2>Contacto</h2>
+        <form>
+            <label for="name"><b>Nombre:</b></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"><b>Correo Electrónico:</b></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message"><b>Mensaje:</b></label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            
+        </form>
+        <button type="submit">Enviar Mensaje</button>
+    </section>
+    <footer>
+        <p>Developed and designed by Mateo. ©2024. All rights reserved.</p>
+    </footer>
+</body>
+</html>

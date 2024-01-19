@@ -1,0 +1,13 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+#txtMostrarPalabra{
+    border-color: transparent;
+    text-align: center;
+}
+
+#txtMostrarPalabra:hover{
+    border-color: cornflowerblue;
+}
